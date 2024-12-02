@@ -1,8 +1,8 @@
-# Mailer Module
+# Emailer Module
 
 ## Overview
 
-The Mailer module is a configurable Python class that handles email functionalities across an application. It provides robust features for sending emails with HTML templates, attachments, and scheduling, as well as reading emails with advanced filtering capabilities.
+The Emailer module is a configurable Python class that handles email functionalities across an application. It provides robust features for sending emails with HTML templates, attachments, and scheduling, as well as reading emails with advanced filtering capabilities.
 
 ## Features
 
@@ -34,9 +34,9 @@ pip install Pillow beautifulsoup4
 ### Initializing the Mailer
 
 ```python
-from mailify import Mailer
+from emailfly import Emailer
 
-mailer = Mailer(
+mailer = Emailer(
     sender_email="your_email@example.com",
     password="your_password",
     sender_name="Your Name",

@@ -11,8 +11,8 @@ else:
     long_description = "Simple library to write Python emails."
 
 setup(
-    name="mailify",
-    version="2.7.0",
+    name="emailfly",
+    version="1.0.1",
     license='MIT',
     description="Simple library to write python emails",
     long_description=long_description,
@@ -20,7 +20,7 @@ setup(
     author="EncoreSky Technologies",
     author_email='samrathpatidar@encoresky.com',
     url='https://github.com/samrath-est/mailer.git',
-    packages=find_packages(include=["mailify", "mailify.*"]),  
+    packages=find_packages(include=["emailfly", "emailfly.*"]),  
     include_package_data=True,
     install_requires=[
         "beautifulsoup4==4.12.3",  # Correct typo here

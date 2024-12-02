@@ -11,6 +11,7 @@ import email
 import smtplib
 import imaplib
 from PIL import Image
+from threading import Timer
 from bs4 import BeautifulSoup
 from typing import Dict, List
 from email.mime.text import MIMEText
@@ -19,10 +20,9 @@ from os.path import basename, splitext
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from .utils.utils import validate_path, get_files_from_dir
-from threading import Timer
 
 
-class Mailer:
+class Emailer:
     def __init__(self, 
                  sender_email: str,
                  password: str,
