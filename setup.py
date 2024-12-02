@@ -2,7 +2,7 @@ from setuptools import setup
 
 from pathlib import Path
 this_directory = Path(__file__).parent
-long_description = (this_directory / "README_PyPi.md").read_text()
+long_description = (this_directory / "Readme_PyPi.md").read_text()
 
 setup(
     name="mailer",
@@ -13,7 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     author="EncoreSky Technologies",
     author_email='samrathpatidar@encoresky.com',
-    url='git@github.com:samrath-est/mailer.git',
+    url='https://github.com/samrath-est/mailer.git',
     packages=[
         "mailer"
     ],

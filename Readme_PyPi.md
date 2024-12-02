@@ -86,7 +86,6 @@ emails = mailer.read_emails(
 ```
 
 
-
 ## Important Notes
 
 - Use app-specific passwords for Gmail
