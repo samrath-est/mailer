@@ -393,26 +393,3 @@ class Mailer:
         
 
 
-mailer = Mailer(
-    sender_email="samrath.patidar@encoresky.com",
-    password="ipct vgjq qldv ayrj",
-    sender_name="samrath patidar",
-    port=587,
-    smtp_server="smtp.gmail.com"
-)
-
-result = mailer.send_email(subject="test",
-                           html_template="templates/sample",
-                           recipients="samrathpatidar868@gmail.com",
-                            data={"name": "samrath"},
-                            cc_email="samrathpatidar26@gmail.com",
-                           
-                            )
-
-# result = mailer.read_emails(username="samrath.patidar@encoresky.com",
-#                             password="ipct vgjq qldv ayrj",
-#                             folder="INBOX",
-#                             limit=2,
-#                             mark_as_read=True)
-
-print(result)
