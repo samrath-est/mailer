@@ -34,7 +34,7 @@ pip install Pillow beautifulsoup4
 ### Initializing the Mailer
 
 ```python
-from mailer import Mailer
+from mailify import Mailer
 
 mailer = Mailer(
     sender_email="your_email@example.com",

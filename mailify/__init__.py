@@ -1,0 +1,1 @@
+from mailify import Mailer

@@ -5,7 +5,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "Readme_PyPi.md").read_text()
 
 setup(
-    name="mailer",
+    name="mailify",
     version="1.0.6",
     license='MIT',
     description="Simple library to write python emails",
@@ -15,7 +15,7 @@ setup(
     author_email='samrathpatidar@encoresky.com',
     url='https://github.com/samrath-est/mailer.git',
     packages=[
-        "mailer"
+        "mailify"
     ],
     include_package_data=True,
     install_requires=[
