@@ -1,6 +1,6 @@
 """
 mailer.py
-module path (app.mail_handler.mailer)
+module path (mailer.mailify.mailer)
 
 Mailer is a configurable module that handles the mailing functionalities across the app
 """
@@ -18,7 +18,7 @@ from email.mime.image import MIMEImage
 from os.path import basename, splitext
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
-from mailer.utils.utils import validate_path, get_files_from_dir
+from .utils.utils import validate_path, get_files_from_dir
 from threading import Timer
 
 
@@ -64,7 +64,7 @@ class Mailer:
         template_files = get_files_from_dir(f"{template}")
         html_file = [each for each in template_files if each.suffix == ".html"][0]
 
-        image_directory = 'mailer/templates/sample/images/'
+        image_directory = 'templates/sample/images/'
         if os.path.exists(image_directory):
             for file in os.listdir(image_directory):
                 os.remove(f'{image_directory}{file}')

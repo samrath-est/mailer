@@ -1,1 +1,1 @@
-from mailify import Mailer
+from .mailer import Mailer
